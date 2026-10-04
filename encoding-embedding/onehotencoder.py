@@ -1,9 +1,12 @@
 from sklearn.preprocessing import OneHotEncoder
 import numpy
 
-document = ["my name is ashwani and i love ai" ]      
+documents = ["people watch movie", 
+             "people watch cricket", 
+             "people like movie", 
+             "people like cricket"]    
 
-tokens = [sentence.lower().split() for sentence in document]
+tokens = [sentence.lower().split() for sentence in documents]
 print(tokens)
 
 all_words = [[word] for sentence in tokens for word in sentence]
